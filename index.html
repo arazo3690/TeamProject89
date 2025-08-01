@@ -42,7 +42,7 @@
     <p>
         At Coltivare, we believe farming should be efficient, sustainable, and supported by practical solutions.
         That’s why we offer hands-on services tailored to the everyday needs of farmers. Whether you're maintaining
-        equipment, planning your next crop cycle, or training the next generation, we are here to help you grow — literally.
+        equipment, planning your next crop cycle, or training the next generation, we are here to help you grow, literally!
     </p>
 
     <h2>Our Services</h2>
@@ -96,8 +96,11 @@
     </div>
 
     <footer>
-        <p>© 2025 Coltivare. All rights reserved.</p>
-        <p>Date last modified: August 1, 2025</p>
+        <p>&copy; 2025 Coltivare. All rights reserved.</p>
+        <p>Date last modified: <span id="lastModified"></span></p>
+        <script>
+            document.getElementById("lastModified").textContent = document.lastModified;
+        </script>
     </footer>
 
 </body>
