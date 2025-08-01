@@ -1,14 +1,200 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Company Services</title>
-    <style>
-      h1 {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Company Services</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coltivare Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .service {
+      margin-bottom: 30px;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      max-width: 500px;
+      margin-top: 40px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1a252f;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .highlight {
+      color: darkgreen; /* Font color 1 */
+      font-style: italic; /* Italics */
+    }
+    .note {
+      color: darkred; /* Font color 2 */
+      font-family: "Courier New", monospace; /* Font style 2 */
+      font-size: 14px; /* Font size 1 */
+    }
+    .emphasis {
+      font-weight: bold; /* Boldfacing */
+      font-size: 18px; /* Font size 2 */
+      text-decoration: underline; /* Underlining */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Coltivare</h1>
+    <p>Helping Your Farm Thrive</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+<a href="mailto:halsinan@purdue.edu">Contact Hussain</a>
+  </nav>
+
+  <main>
+    <h2>What We Do to Keep Your Farm Thriving</h2>
+    <p class="highlight">
+      At Coltivare, we believe farming should be efficient, sustainable, and supported by practical solutions.
+      That’s why we offer hands-on services tailored to the everyday needs of farmers.
+      Whether you're maintaining equipment, planning your next crop cycle, or training the next generation,
+      we are here to help you grow — <span class="emphasis">literally</span>.
+    </p>
+
+    <h2>Our Services</h2>
+
+    <div class="service">
+      <h3>Farm Equipment Maintenance & Repair</h3>
+      <p class="note">
+        We offer a variety of on-site and in-shop servicing of tools and machinery to make your life easier.
+        From tractors to hand tools, our technicians ensure everything runs smoothly so you can focus on the field.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Crop Planning & Soil Analysis</h3>
+      <p>
+        We help farmers optimize planting schedules and improve soil health through data-driven insights and expert recommendations.
+        Better soil means better yields, and we are here to make that happen.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Delivery & Logistics Services</h3>
+      <p>
+        Wherever you are, give us a call. We transport equipment and supplies to remote farms,
+        ensuring you get what you need when you need it. No delays, no hassle.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Training & Workshops</h3>
+      <p>
+        We educate upcoming farmers on new technologies and sustainable practices.
+        Our workshops are hands-on, practical, and designed to empower the next generation of growers.
+      </p>
+    </div>
+
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <h2>Quick Links</h2>
+    <ul>
+      <li><a href="https://www.agriculture.com" target="_blank">Visit Agriculture.com</a></li> <!-- Outside link -->
+      <li><a href="#">Learn More About Our Team</a></li>
+      <li><a href="#">Download Our Brochure</a></li>
+    </ul>
+
+    <h2>Why Choose Coltivare?</h2>
+    <ol>
+      <li>Reliable service and support</li>
+      <li>Expertise in sustainable farming</li>
+      <li>Commitment to innovation</li>
+    </ol>
+
+    <h2>Downloadable Resource</h2>
+    <p>
+      <a href="coltivare-brochure.pdf" download>Download our company brochure</a> <!-- Downloadable file -->
+    </p>
+
+    <h2>Our Team</h2>
+    <img src="team-photo.jpg" alt="Coltivare Team" width="400"> <!-- Picture -->
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Coltivare. All rights reserved.</p>
+    <p>Date last modified: <span id="lastModified"></span></p> <!-- Auto-updating date -->
+    <script>
+      document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+  </footer>
+
+</body>
 </html>
